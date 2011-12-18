@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url('http://themes.googleusercontent.com/static/fonts/lora/v4/_IxjUs2lbQSu0MyFEAfa7T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lora'), url('http://themes.googleusercontent.com/static/fonts/lora/v4/5-AYViExptypIdFoLKAxTA.woff') format('woff');
+}
+
+html {	font: 14px/24px Lora, Serif; }
+#container { width: 800px; }
+.printonly, #contact-info .printonly {display: inline;}
+.screenonly, #contact-info .screenonly {display: none; }
+#contact-info {
+	width: 254px;
+	left: 475px;
+}
+#contact-info .printonly { font-size: 14px; }
+
+.section-details dt, .section-name{
+	font-size: 24px;
+}
+
+.section-details{
+	bottom: 24px;
+	width: 620px;
+}
+
+#work-experience, #distinctions{
+	bottom: 48px;
+}
+
+#skills dl{
+	width: 300px;
+}

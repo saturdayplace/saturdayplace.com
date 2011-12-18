@@ -1,0 +1,13 @@
+navigation:
+- text: Home
+  url: /
+- text: Contact Me
+  url: /contact.html
+- text: Portfolio
+  url: /portfolio/
+- text: Blog
+  url: /blog/
+- text: Resume
+  url: /resume/
+- text: Toys
+  url: /toys/

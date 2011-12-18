@@ -1,0 +1,33 @@
+---
+layout: default
+title: Contact
+url: /contact/
+---
+<style>
+	section{text-align: center; margin-bottom: 50px;}
+	section h1 { height: 40px; }
+	footer section{ text-align: left; }
+	#skype a { border-bottom: none; }
+</style>
+
+<section style='margin-left: 0;'>
+	<h1>Old Skool</h1>
+	<p>Start a game of tag!</p>
+	<ul>
+		<li>Phone: 801.335.9381</p>
+		<li>Email: <a id='email-link' href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#114;&#101;&#118;&#111;&#114;&#64;&#115;&#97;&#116;&#117;&#114;&#100;&#97;&#121;&#112;&#108;&#97;&#99;&#101;&#46;&#99;&#111;&#109;'> &#84;&#114;&#101;&#118;&#111;&#114;&#32;&#72;&#117;&#110;&#115;&#97;&#107;&#101;&#114;</a></li>
+	</ul>
+</section>
+
+<section id='skype'>
+	<h1>Skype</h1>
+	<p>Like the telephone, only cooler.</p> 
+	<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script> 
+	<a href="skype:saturdayplace?call"><img src="http://mystatus.skype.com/smallclassic/saturdayplace" style="border: none;" width="114" height="20" alt="My status" /></a> 
+</section>
+
+<section>
+	<h1>Chat</h1>
+	<p>You type.  I type. Repeat.</p>			
+	<iframe src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqhooup0uu8k4jsp89k76enmhhba2s29nve75p0o56sld6k8nprk9uvg6mnqk6nk6kqdl491s8qfoil2e4rgf34ir4fdord2k6aehui5jhb3o6lpqmjg1grin7rcbvturqg0n60a44rvo6aij51neirak6p0nlplb1&w=200&h=60" frameborder="0" allowtransparency="true" width="200" height="60"></iframe> 
+</section>

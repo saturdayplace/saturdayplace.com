@@ -463,16 +463,17 @@ code {
 	margin-bottom: 20px;
 }
 
-#experiments dt{ clear: left; }
+#experiments dt{
+	clear: left; 
 	font-size: 24px;
 	clear: left;
+}
 
 #experiments dd img{
 	float: left; 
 	margin-right: 20px;
 	margin-bottom: 60px;
 }
-
 
 #experiments dd+dt{
 	margin-top: 30px;

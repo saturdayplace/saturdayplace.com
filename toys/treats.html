@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Treat Countdown</title>
+
+  <link rel="stylesheet" href="/treats/style.css">
+    
+  <script src="/treats/jquery-1.6.4.min.js"></script>
+  <script src='/treats/js.js'></script>
+</head>
+
+<body>
+  <h1>Treat Countdown</h1>
+  <noscript>
+  		<p>Hm.  This thing is basically JavaScript, so if you've got it disabled this ain't gonna to work. </p>
+  	</noscript>
+  <div id='wrapper'>
+  	
+	<canvas id='canvas' width='700' height='700'></canvas>
+	
+	<ul id='countdown'>
+		<li><span id='days'></span><br><span id='days_label'>Days</span></li>
+		<li><span id='hours'></span><br><span id='hours_label'>Hours</span></li>
+		<li><span id='minutes'></span><br><span id='minutes_label'>Minutes</span></li>
+		<li><span id='seconds'></span><br><span id='seconds_label'>Seconds</span></li>
+	</ul>
+	
+  </div>
+
+</body>
+</html>

@@ -150,12 +150,12 @@ $(function(){
 		},
 		
 		strike1: function(){
-			$("#strike img").attr("src", "/media/saturdayplace/SAAFeud/img/strike.png");
+			$("#strike img").attr("src", "/SAAFeud/img/strike.png");
 			this.strikeAll();
 		},
 		
 		strike2: function(){
-			$("#strike img").attr("src", "/media/saturdayplace/SAAFeud/img/strike2.png");
+			$("#strike img").attr("src", "/SAAFeud/img/strike2.png");
 			this.strikeAll();
 		},
 		

@@ -4,10 +4,10 @@ navigation:
 - text: Contact Me
   url: /contact.html
 - text: Portfolio
-  url: /portfolio/
+  url: /portfolio.html
 - text: Blog
   url: /blog/
 - text: Resume
-  url: /resume/
+  url: /resume.html
 - text: Toys
   url: /toys/

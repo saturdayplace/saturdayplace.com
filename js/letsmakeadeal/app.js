@@ -22,7 +22,7 @@ $(document).ready(function(){
 		if(event.propertyName == "width" && height_percent == 1){
 			target.addClass("open");
 			var prize = $("<div class='prize'>");
-			var imgString = "/media/saturdayplace/img/letsmakeadeal/" + target.attr("id") + ".jpg";
+			var imgString = "/img/letsmakeadeal/" + target.attr("id") + ".jpg";
 			var img = $("<img>").attr("src", imgString);
 			prize.append(img);
 			$("#wrapper").append(prize);

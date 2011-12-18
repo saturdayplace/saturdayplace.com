@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>SAA Feud!!</title>
+
+  <link rel="stylesheet" href="/SAAFeud/css/style.css">
+
+  <script id='admin-question-template' type='text/template'>
+  	<input type='submit' value='Ask'>
+	<dl>
+		<dt><%= question %></dt>
+		<% for(var key in answers){ %>
+			<dd><%= key %>: <%= answers[key] %></dd>
+		<% } %>
+	</dl>
+  </script>
+  
+  <script id='scoreboard-template' type='text/template'>
+	<dl class='team-board' id='team-board<%= id %>'>
+		<dt class='team-name'><%= name %></dt>
+		<dd id='team<%= id %>-score'><%= score %></dd>
+	</dl>
+  </script>
+  
+  <script src="/SAAFeud/js/libs/jquery-1.6.2.js"></script>
+  <script src="/SAAFeud/js/libs/underscore-1.1.6.js"></script>
+  <script src="/SAAFeud/js/libs/backbone-0.5.1.js"></script>
+  <script src="/SAAFeud/js/libs/backbone-localstorage.js"></script>
+  <script src="/SAAFeud/js/initial_data.js"></script>
+  <script src="/SAAFeud/js/app.js"></script>
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+    
+  	<div id="public">  		
+    	<div id='question'></div>
+    	<div id='strike'><img src='/SAAFeud/img/strike.png'></div>
+    </div> <!-- end #public -->
+  	    
+    <div id="admin">
+    	<select id='point-prompt'>
+    		<option value=''>Which team got the points?</option>
+    		<option value='team1'>Team 1</option>
+    		<option value='team2'>Team 2</option>
+    	<select>
+    	<div id='blackout'></div>
+    	<input type='submit' value='Reset Game'>
+    	<input type='submit' value='Strike 2'>
+    	<input type='submit' value='Strike 1'>
+    	<audio src='/SAAFeud/audio/buzzer.wav' preload='auto'></audio>
+    	<br />
+    	
+    </div> <!-- end #admin -->
+
+  </div> <!--! end of #container -->
+
+</body>
+</html>

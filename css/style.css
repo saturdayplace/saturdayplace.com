@@ -423,7 +423,7 @@ section h1{
 /*---------- Blog styles */
 article {
 	width: 40em;
-	margin-left: 20px;
+	margin: 0 0 4em 20px;
 	background: rgba(0,0,0,0.4);
 	padding: 15px;
 	-moz-border-radius: 10px;
@@ -435,7 +435,11 @@ html.ie6 article, html.ie7 article, html.ie8 article{
 	padding: 0;
 }
 
-article h1 { font-size: 24px; }
+article h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
 time {
 	display: block;
 	font: 18px VegurLight;
@@ -443,16 +447,16 @@ time {
 }
 
 pre{
-	background-color: #555;
+	background-color: #222;
 	padding: 5px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	border: 1px solid #999;
+	margin-bottom: 1.5em;
 }
 
 code {
-	background-color: #555;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 14px;
 }

@@ -1,0 +1,16 @@
+---
+layout: post
+title: Force SSL connection on a subdirectory using mod_rewrite
+---
+
+<p>A while back I needed to force an SSL connection for only a subdirectory of a website. &nbsp;Apache's mod_rewrite came to my rescue.</p>
+
+{% highlight apacheconf %}
+RewriteEngine On
+RewriteCond %{HTTPS} off # the following rules only apply if the connection isn't already HTTPS
+
+# Next line captures any bits after the directory we're interested in
+# and stuff it into %1, which gets expanded back out in the rule at the end
+RewriteCond %{REQUEST_URI} /dir-that-needs-ssl/(.*)
+RewriteRule / https://www.example.com/dir-that-needs-ssl/%1 [R,L]
+{% endhighlight %}

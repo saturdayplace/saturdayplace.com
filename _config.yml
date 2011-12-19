@@ -11,3 +11,6 @@ navigation:
   url: /resume.html
 - text: Toys
   url: /toys/
+
+permalink: /blog/:year/:month/:day/:title
+pygments: true

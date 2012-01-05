@@ -1,0 +1,49 @@
+---
+layout: post
+title: Pascal's Triangle in Python (with semi-decent printing)
+---
+
+<p>Today, I ran across a Hacker News thread where someone mentioned that they often ask job applicants to whiteboard a function
+	that would return a row of <a href='http://en.wikipedia.org/wiki/Pascal's_triangle'>Pascal's Triangle</a>.
+	I couldn't resist, so and came up with this:
+</p>
+
+{% highlight apacheconf %}
+print "\n"
+print "Printing Pascal's triangle."
+num_rows = input("How many rows do you want: ")
+
+def triangle(num_rows):
+	width = 2*num_rows - 1
+	prev_row = []
+	triangle = []
+
+	for row_num in range(num_rows):
+		row_width = row_num + 1 # the number of items that will appear in this row
+		if row_num == 0:
+			row = [1]
+		
+		else:
+			row = []
+			for i in range(row_width):
+				if i == 0 or i == row_width-1:
+					# the '1's on either end of each row
+					row.append(1)
+				else:
+					# Calculate the sum of the two numbers above this position
+					row.append(prev_row[i-1] + prev_row[i])
+		
+		prev_row = row
+		triangle.append(row)
+	return triangle
+
+# Actually generate the triangle		
+triangle = triangle(num_rows)
+
+# Now print it out nicely
+# First, get the width of the last row in the triangle (printed as a string)
+width = len(" ".join(["%s" % num for num in triangle[-1]]))
+
+for line in triangle:
+	print str.center(" ".join(["%s" % num for num in line]), width)
+{% endhighlight %}

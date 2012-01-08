@@ -2,13 +2,13 @@ navigation:
 - text: Home
   url: /
 - text: Contact Me
-  url: /contact.html
+  url: /contact/
 - text: Portfolio
-  url: /portfolio.html
+  url: /portfolio/
 - text: Blog
   url: /blog/
 - text: Resume
-  url: /resume.html
+  url: /resume/
 - text: Toys
   url: /toys/
 

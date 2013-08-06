@@ -4,16 +4,18 @@ title: Understanding Python decorators
 ---
 
 <p>A while back, I was hanging out on some Python forum and someone posted a comment about not being able to wrap their head around decorators. &nbsp;I spent some time on what I thought was a helpful comment, and that was that. Recently I figured it'd be worthwhile to expand that comment a bit. &nbsp;So, here we go.</p>
-<p>First, it helpes to understand that python variables are&nbsp;<a href="http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html#other-languages-have-variables">not boxes</a>&nbsp;in which you store values, but rather&nbsp;<a href="http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html#python-has-names">name tags</a>&nbsp;that you hang onto objects. &nbsp;Please don't move on until you grok this, it's the principle central to decorators.</p>
+<p>First, it helpes to understand that python variables are&nbsp;<a href="http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html#other-languages-have-variables">not boxes</a>&nbsp;in which you store values, but rather&nbsp;<a href="http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html#python-has-names">name tags</a>&nbsp;that you hang onto objects. &nbsp;Please don't move on until you grok this, it's the central principle to decorators.</p>
 <p>Second, in Python, functions are objects. Function names themselves are just name tags hung onto their respective function objects.</p>
 <p>Finally, here's a simple definition of a decorator: It's just a function. &nbsp;Seriously. Nothing magic about it all. It takes another function as an argument (the function being decorated). It returns yet another function object.</p>
 <p>If that sounded like I just said, "Function function function function function," (which is how I felt when trying to wrap my head around decorators), here's a small python program that may help out:</p>
+
 {% highlight python %}
 def orig_function():
     print "Hello!"
 
-def my_decorator(orig_function):  # Decorator takes a function as an argument
-    def third_func():   # Yes, it's totally legit to create nested function definitions.  It's a very common decorator idiom.
+def my_decorator(function_to_decorate):  # Decorator takes a function as an argument
+    def third_func():   # Yes, it's totally legit to create nested function definitions. 
+    			# It's a very common decorator idiom.
         print "Take Off, eh?"
 
     return third_func # return a function object.  Note: we don't have parens here.
@@ -30,8 +32,8 @@ Hello!
 "Take off, eh?"
 {% endhighlight %}
 
-<p>That above syntax is what made decorators click for me. All we've done here is taken the&nbsp;<code>orig_function</code>&nbsp;nametag, and hung it onto the <code>third_function</code> object (remember, <code>my_decorator</code> returns <code>third_func</code>). So, when we call <code>orig_function()</code> now, we're really calling <code>third_func()</code></p>
-<p>I used the above syntax (<code>a=decorator(b)</code>) until I was sure I understood how decorators worked befure I switched to using the shorter @ syntax.</p>
+<p>That above syntax is what made decorators click for me. All we've done here is taken the&nbsp;<code>orig_function</code>&nbsp;nametag, and hung it onto the <code>third_function</code> object (remember, <code>my_decorator</code> returns <code>third_func</code>). So when we call <code>orig_function()</code> now, what we're <strong>really</strong> calling is <code>third_func()</code>.</p>
+<p>I used the above syntax ( <code>a=decorator(b)</code> ) until I was sure I understood how decorators worked before I switched to using the shorter @ syntax.</p>
 
 {% highlight python %}orig_function = my_decorator(orig_function){% endhighlight %}
 
@@ -44,5 +46,5 @@ def orig_function():
 {% endhighlight %}
 
 <p>which isn't as intuitive and is probably the main roadblock to understanding decorators right at first, but nicer to use once you've got the hang of things.</p>
-<p>In this example, we didn't do anything in the <code>my_decorator</code> function with the argument that was passed in (<code>orig_function</code>), but we could have called it, and then return something other than third_func, depending on what orig_function returned. Remember, a decorator is just a function, you can do anything inside a decorator you'd do in a vanilla Python function. It just needs to take a function as a parameter, and return another function.</p>
+<p>In this example, we didn't do anything in the <code>my_decorator</code> function with the argument that was passed in ( <code>orig_function</code> ), but we could have called it and returned something other than third_func, depending on what orig_function returned. Remember, a decorator is just a function, you can do anything inside a decorator you'd do in a vanilla Python function. It just needs to take a function as a parameter, and return another function.</p>
 

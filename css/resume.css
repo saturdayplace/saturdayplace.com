@@ -174,3 +174,21 @@ header h2, #contact-info{
 }
 
 .printonly, #contact-info .printonly {display: none;}
+
+#print-message{
+	width: 100%;
+	font-family: sans-serif;
+	text-align: center;
+	background-color: #555;
+	color: #999;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+#print-message a{ color: orange; }
+#print-message a:hover{
+	border-bottom: 1px dotted orange;
+;

@@ -17,7 +17,8 @@ html {	font: 14px/24px Lora, Serif; }
 .screenonly, #contact-info .screenonly {display: none; }
 #contact-info {
 	width: 254px;
-	left: 475px;
+	left: 575px;
+  bottom: 66px;
 }
 #contact-info .printonly { font-size: 14px; }
 
@@ -36,4 +37,9 @@ html {	font: 14px/24px Lora, Serif; }
 
 #skills dl{
 	width: 300px;
+}
+
+#print-break{
+  display: block;
+  height: 100px;
 }

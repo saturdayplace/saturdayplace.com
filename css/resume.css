@@ -93,7 +93,7 @@ header h2, #contact-info{
 	width: 245px;
 	position: relative;
 	left: 700px;
-	bottom: 88px;
+	bottom: 77px;
 }
 
 #contact-info dt, #contact-info dd{
@@ -141,8 +141,11 @@ header h2, #contact-info{
 } 
 
 
-#work-experience, #distinctions{
+#work-experience{
 	bottom: 60px; /* = 2* .section-details dt font-size above */
+}
+#distinctions{
+	bottom: 90px;	
 }
 .position { margin-bottom: 2.5em; }
 .time-period {

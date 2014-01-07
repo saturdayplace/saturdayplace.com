@@ -161,13 +161,14 @@ header h2{
 header nav{
 	position: relative;
 	left: 620px;
-	bottom: 95px;
+	bottom: 85px;
 	width: 412px;
 }
 
 header li{
+	font-size: 16px;
 	display: inline;
-	margin-left: 20px;
+	margin-left: 16px;
 }
 
 
@@ -481,10 +482,6 @@ code {
 	margin-right: 20px;
 	margin-bottom: 60px;
 }
-
-#experiments dd+dt{
-	margin-top: 30px;
-
 
 /*---------- Footer */
 footer{

@@ -3,8 +3,6 @@ navigation:
   url: /
 - text: Contact Me
   url: /contact/
-- text: Portfolio
-  url: /portfolio/
 - text: Blog
   url: /blog/
 - text: Resume

@@ -12,4 +12,4 @@ navigation:
 
 
 permalink: /blog/:year/:month/:day/:title
-pygments: true
+highlighter: pygments

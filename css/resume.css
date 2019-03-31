@@ -52,11 +52,20 @@ html{
 	color: #555;
 }
 
+abbr {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+abbr:hover {
+	cursor: help;
+}
+
 #container {
 	width: 960px;
 	margin: 60px auto;
 	background-color: #EEE;
-	padding: 60px;
+	padding: 30px 60px;
 	border: 8px solid #555;
 	border-left: 0;
 	border-right: 0;
@@ -155,6 +164,7 @@ header h2, #contact-info{
 }
 .time-period, .company{
 	color: #999;
+	margin-top: 3px;
 }
 
 .position ul{
@@ -192,6 +202,6 @@ header h2, #contact-info{
 }
 
 #print-message a{ color: orange; }
-#print-message a:hover{
+#print-message a:hover {
 	border-bottom: 1px dotted orange;
-;
+}

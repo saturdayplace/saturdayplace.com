@@ -12,6 +12,7 @@
 }
 
 html {	font: 14px/24px Lora, Serif; }
+abbr{ border: none; }
 #container { width: 800px; }
 .printonly, #contact-info .printonly {display: inline;}
 .screenonly, #contact-info .screenonly {display: none; }
@@ -33,6 +34,10 @@ html {	font: 14px/24px Lora, Serif; }
 
 #work-experience, #distinctions{
 	bottom: 48px;
+}
+
+#distinctions{
+    bottom: 70px;
 }
 
 #skills dl{

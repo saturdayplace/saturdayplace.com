@@ -47,9 +47,9 @@
       <div id='skills'>
         <dl>
           <dt>Skills</dt>
+          <dd>Managing a remote-first distributed development team</dd>
           <dd>Hand-coding clean, semantic markup <span class='printonly'>(view source for the online version of this resum&eacute;: <a href='http://saturdayplace.com/resume/'>saturdayplace.com/resume</a>)</span></dd>
           <dd>Understand best practices for page performance and user experience</dd>
-          <dd>Familiar with MVC development pattern</dd>
           <dd>Comfortable with both front- and back-end web development</dd>
           <dd>Linux system administration</dd>
           <dd>Achieve compatibility with <em>negligent</em> browsers</dd>
@@ -58,8 +58,8 @@
         <dl>
           <dt>Technical</dt>
           <dd>HTML, CSS, JavaScript, ActionScript</dd>
-          <dd>Python, Django, jQuery, Angular, Backbone.js, React.js, Knockout, PHP, MySQL, Apache, NGINX, HLS</dd>
-          <dd>Mercurial, Git</dd>
+          <dd>Python, Django, jQuery, Angular, React, MySQL, Apache, NGINX, HLS, DASH</dd>
+          <dd>Git, Mercurial</dd>
           <dd>Linux, Win, OS X</dd>
         </dl>
 
@@ -72,18 +72,47 @@
 
     <dt class='section-name'>Professional Experience</dt>
     <dd class='section-details' id='work-experience'>
+
+      <dl class='position'>
+       <dt class='job-title'>Sr. Manager, Software Dev Engineering</dt>
+       <dd class='company'>Verizon Digital Media Services</dd>
+       <dd class='time-period'>May 2016 - Present</dd>
+       <dd>
+         <ul>
+           <li>Managing team of 10 developers, supporting on-demand and live streaming playback for customers such as ESPN, Disney, ABC, and Fox.</li>
+           <li>Responsible for player-facing APIs which:
+
+             <ul>
+               <li>Generate dynamic <abbr title="HTTP Live Streaming">HLS</abbr> &amp; <abbr title="Dynamic Adaptive Streaming over HTTP">DASH</abbr> manifests
+               </li>
+               <li>Serve authenticated requests for video decryption keys / DRM licenses</li>
+               <li>Communicate with ad servers, insert personalized ads directly into the stream, and pass ad info to players</li>
+             </ul>
+           </li>
+           <li>Above APIs work at scale, serving up to 1.6M concurrent viewers</li>
+           <li>Grew the team from 6 to 10 members</li>
+         </ul>
+       </dd>
+      </dl>
+
+
       <dl class='position'>
        <dt class='job-title'>Software Engineer</dt>
        <dd class='company'>Verizon Digital Media Services</dd>
-       <dd class='time-period'>September 2014 - Present</dd>
+       <dd class='time-period'>September 2014 - May 2016</dd>
        <dd>
          <ul>
-           <li>Team Lead for dynamic HTTP Live Streaming (HLS) manifest generation, supporting on-demand and live streaming playback for customers such as ESPN, Disney, ABC, and Saturday Night Live. Including the ability to dynamically add ads directly into the stream.</li>
-           <li>Built VDMS's FairPlay Streaming (FPS) key server implementation</li>
+           <li>Team Lead for dynamic HLS &amp; DASH manifest generation &amp; server-side ads communications</li>
+           <li>Built FairPlay Streaming (FPS) key server implementation</li>
+           <li>Inital architect of DASH manifest generator</li>
+           <li>Initial architect of Widevine license server integration</li>
+           <li>Architect of ESNI (SCTE 224) ingest and playback system</li>
+           <li>Inventor on patent application for "Hybrid Client-Side Beacon Tracking"</li>
            <li>Refactored API code to make it more easily extensible</li>
          </ul>
        </dd>
       </dl>
+
 
       <dl class='position'>
         <dt class='job-title'>Web Developer</dt>
@@ -91,7 +120,7 @@
         <dd class='time-period'>January 2009 - August 2014</dd>
         <dd>
           <ul>
-            <li>Architected and built user- and SEO-friendly CMS for website in Django.  Expanded later to handle multiple domains. Citadex.com was live within one-week of receiving Photoshop mockups</li>
+            <li>Architected and built user- and SEO-friendly CMS for website in Django.  Expanded later to handle multiple domains. Citadex.com was live within one-week of receiving Photoshop mockups<div id="print-break"></div></li>
             <li>Designed and built intranet web-apps: Call Report, Employee Wellness Program, HR Job Req Tracker, License Tracker, Server Dashnoard, IT Quotes</li>
             <li>Deployment and custom integration of Customer Portal for Microsoft Dynamics CRM 2011</li>
             <li>Automated deployments using Fabric</li>
@@ -102,6 +131,8 @@
           </ul>
         </dd>
       </dl>
+
+
 
       <dl class='position'>
         <dt class='job-title'>Freelance Web Developer</dt>
@@ -116,7 +147,6 @@
         </dd>
       </dl>
 
-      <div id="print-break"></div>
 
       <dl class='position'>
         <dt class='job-title'>Architectural Illustrator</dt>
@@ -130,8 +160,6 @@
           </ul>
         </dd>
       </dl>
-
-
 
       <dl class='position'>
         <dt class='job-title'>Talent Manager</dt>
@@ -162,11 +190,13 @@
     <dt class='section-name'>Distinctions &amp; Sundry Notables</dt>
     <dd class='section-details' id='distinctions'>
       <ul>
+        <li>Certified Widevine Implementation Partner</li>
         <li>SANS: GIAC Web Application Penetration Tester</li>
         <li>MCTS: SharePoint Server 2007, Configuration</li>
         <li>Honorable Mention: Utah Film Commission Commercial Contest 2004</li>
         <li>Director's Choice, Motion Graphics: University of Utah Digital Media Festival 2005</li>
         <li>Eagle Scout, Scout Master</li>
+        <li>Youth Soccer Coach</li>
       </ul>
     </dd>
 
@@ -176,9 +206,7 @@
 
   </dl>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
   </div> <!-- end #container -->
 </body>
 </html>

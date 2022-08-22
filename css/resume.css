@@ -209,3 +209,7 @@ header h2, #contact-info{
 li li {
 	list-style-type: circle;
 }
+
+li li li {
+	list-style-type: square;
+}
